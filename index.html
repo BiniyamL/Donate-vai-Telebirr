@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate via Telebirr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="donation-page">
+        <div class="donation-container">
+            <h1> Support my Website </h1>
+            <p> Your contribution helps me continue my journye.</p>
+            <form id="donationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your name" required>
+                <label for="amount">Donation Amount (ETB):</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+                <label for="phone">Your Telebirr number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Your phone number" required>
+                
+                <button type="submit">Donate via Telebirr </button>
+            </form>
+            <div id="paymentSection" class="hidden">
+                <h2> Complet your donation</h2>
+                <p>Amount:
+                    <span id="donationAmount"></span>ETB</p>
+                <p>Doner Name:
+                    <span id="donerName"></span></p>  
+                <p>Phone:
+                    <span id="donerPhone"></span></p>  
+                <button id="payNowButton"> Pay now </button>  
+            <div id="confirmationMessage" class="hidden"> </div>
+                <p> Thank you for your generosity! Your donation was successfully recieved via Telebirr.</p>
+                <button onclick="resetForm()"> Make another donation </button> 
+            </div>    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
